@@ -34,18 +34,18 @@ unpushed () {
 need_push () {
   if [[ $(unpushed) == "" ]]
   then
-    echo " "
+    echo ""
   else
     echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
   fi
 }
 
-rb_prompt(){
-  if $(which rbenv &> /dev/null)
+node_prompt(){
+  if $(which node &> /dev/null) # && [[ -f ./package.json ]]
   then
-	  echo "%{$fg_bold[yellow]%}$(rbenv version | awk '{print $1}')%{$reset_color%}"
+	  echo "%{$fg_bold[yellow]%}$(node -v)%{$reset_color%} "
 	else
-	  echo ""
+	  echo "  "
   fi
 }
 
@@ -72,7 +72,7 @@ directory_name(){
   echo "%{$fg_bold[cyan]%}%0/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(node_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }
