@@ -1,6 +1,8 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+export DROPBOX=$HOME/Dropbox
+
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Developer
 
@@ -20,3 +22,9 @@ compinit
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
+
+# source files in dropbox?
+# if [[ -d $DROPBOX && -d $DROPBOX/dotfiles ]]
+# then
+#   for config_file ($DROPBOX/dotfiles/*.zsh) source $config_file
+# fi
