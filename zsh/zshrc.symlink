@@ -1,6 +1,9 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+# Elixir
+export PATH="$PATH:/usr/local/lib/elixir/v0.5.0/bin"
+
 export DROPBOX=$HOME/Dropbox
 
 # your project folder that we can `c [tab]` to
