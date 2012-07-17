@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # Elixir
-export PATH="$PATH:/usr/local/lib/elixir/v0.5.0/bin"
+# export PATH="$PATH:/usr/local/lib/elixir/v0.5.0/bin"
 
 export DROPBOX=$HOME/Dropbox
 
