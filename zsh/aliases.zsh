@@ -10,6 +10,8 @@ alias lu='ls -Gltur'        # sort by and show access time, most recent last
 alias lt='ls -Gltr'         # sort by date, most recent last
 alias c='clear'
 alias §='exit'
+alias m='mate .'
+
 
 ### Git
 alias gs='git status'
