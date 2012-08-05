@@ -13,6 +13,12 @@ alias §='exit'
 alias m='mate .'
 
 
+# Aliases to launch browsers from the CLI
+alias chrome='open -a "Google Chrome"'
+alias safari='open -a Safari'
+alias ff='open -a Firefox'
+
+
 ### Git
 alias gs='git status'
 
