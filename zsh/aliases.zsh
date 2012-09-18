@@ -19,9 +19,6 @@ alias safari='open -a Safari'
 alias ff='open -a Firefox'
 
 
-### Git
-alias gs='git status'
-
 ### Node / NPM
 # alias npm-old='npm outdated -g'
 alias npm-up='sudo npm up -g'
