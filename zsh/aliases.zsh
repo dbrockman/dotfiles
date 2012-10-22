@@ -25,8 +25,3 @@ alias npm-up='sudo npm up -g'
 alias npm-i='sudo npm i -g'
 
 
-# if $(which hub)
-# then
-#   alias git=hub
-# fi
-
