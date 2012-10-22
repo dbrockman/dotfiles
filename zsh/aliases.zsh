@@ -25,3 +25,5 @@ alias npm-up='sudo npm up -g'
 alias npm-i='sudo npm i -g'
 
 
+# alias to run ifttt-instagram-renamer script
+alias renameIFTTT='node ~/Dropbox/IFTTT/Instagram/ifttt-instagram-renamer.js'
