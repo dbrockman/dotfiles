@@ -34,3 +34,6 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 # then
 #   for config_file ($DROPBOX/dotfiles/*.zsh) source $config_file
 # fi
+
+# Resguiden project
+source ~/.resguiden_config
