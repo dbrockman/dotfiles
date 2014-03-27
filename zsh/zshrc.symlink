@@ -39,3 +39,8 @@ do
 done
 
 unset config_files
+
+if [[ -a ~/Dropbox/dotfiles/extras.zsh ]]
+then
+  source ~/Dropbox/dotfiles/extras.zsh
+fi
