@@ -67,11 +67,15 @@ rb_prompt() {
   fi
 }
 
+node_version_prompt() {
+  echo "%{$fg_bold[yellow]%}$(node -v)%{$reset_color%} "
+}
+
 directory_name() {
   echo "%{$fg_bold[cyan]%}%0/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)\n› '
+export PROMPT=$'\n$(node_version_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
